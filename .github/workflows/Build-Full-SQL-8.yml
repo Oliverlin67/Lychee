@@ -1,4 +1,4 @@
-name: Build-Dev
+name: PHP-8-Build-Dev
 
 # Run this workflow every time a new commit pushed to your repository
 on:
@@ -31,7 +31,7 @@ jobs:
     strategy:
       matrix:
         operating-system: [ubuntu-20.04]
-        php-versions: ['7.4']
+        php-versions: ['8.0']
         sql-versions: ['mysql', 'postgresql', 'sqlite']
 
     name: PHP ${{ matrix.php-versions }} - ${{ matrix.sql-versions }}
