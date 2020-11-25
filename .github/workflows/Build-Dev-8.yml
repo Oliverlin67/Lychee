@@ -33,7 +33,7 @@ jobs:
         operating-system: [ubuntu-20.04]
         php-versions: ['8.0']
         sql-versions: ['mysql', 'postgresql', 'sqlite']
-        experimental: true
+        experimental: ['true']
 
     name: PHP ${{ matrix.php-versions }} - ${{ matrix.sql-versions }}
 
